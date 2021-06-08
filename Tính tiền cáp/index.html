@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style type="text/css">
+        table,tr,td{
+            border: solid 1px red;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+  <body>
+    <div class="my-5">
+        <h3 class="bg-warning text-danger p-2 d-inline-block rounded"> Tính tiền cáp</h3>
+        <div class="row">
+            <form class="col-6">
+                <div class="form-group">
+                    <label class="font-weight-bolder" for="maKhachHang">Chọn
+                        mã khách hàng:</label>
+                    <select name="maKhachHang" id="maKhachHang">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select> <br>
+                    <tt class="text-muted">* 1: Nhà dân</tt> <br>
+                    <tt class="text-muted">* 2: Doanh nghiệp</tt>
+
+                </div>
+                <div class="form-group">
+                    <label class="font-weight-bolder m-0"
+                        for="soTaiKhoan">Số tài khoản</label>
+                    <input type="text"
+                        class="form-control"
+                        id="soTaiKhoan" placeholder="Số tài khoản">
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <div class="col-6 pl-0">
+                        <label class="font-weight-bolder m-0"
+                            for="soTaiKhoan">Là KH Doanh Nghiệp, nhập Số Đầu Nối</label>
+                        <input type="number"
+                            class="form-control"
+                            id="soDauNoi" min="0" placeholder="Số đầu nối" value="1">
+                    </div>
+                    <div class="col-6 pr-0">
+                        <label class="font-weight-bolder m-0"
+                            for="soTaiKhoan">Số kênh thuê</label>
+                        <input type="number"
+                            class="form-control"
+                            id="soKenh" min="0" placeholder="Số kênh thuê" value="1">
+                    </div>
+                </div>
+
+                <button id="tinhTienCapBtn" type="submit" class="btn
+                    btn-primary">Tính tiền cáp</button>
+            </form>
+            <div class="col-6 d-flex align-items-center
+                justify-content-center">
+                <div id="outPutTienCap">
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
